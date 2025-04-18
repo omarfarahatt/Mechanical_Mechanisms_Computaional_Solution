@@ -1,0 +1,6 @@
+The method used to derive the equations of the four bar mechanism in the code is the closed loop method. Where the sum of the vectors r_1 and r_4 equals the sum of the vectors r2 and r_3.
+By using this equation and setting the sum of lengths of r_1 and r_4 in the x-direction equal to the sum of lengths of r_2 and r_3 in the x-direction and sdoing the same in the y direction, we get two equations in 2 variables (theta2 and theta3).
+The problem is that solving these two ecuations computationally is almost impossible so we relied on the graphical solution.
+We put theta4 as a function of theta3 from the two equations and brute forces all values of theta3 to get the intersection points between the two curves.
+Wether there was 1 or 2 intersection points, the pionts of intersection are all valid solutions.
+Using the angles we got, and the values already given (r1, r2, r3, r4, theta2, omega2, and alpha2) we can get all other unknowns by differentiating the 2 original equations 2 times. and solving them again.
